@@ -1,0 +1,170 @@
+body {
+  display: grid;
+  justify-items: center;
+  background-color: #f7f7f7;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  gap: 60px;
+  margin: 0;
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+/* Nav */
+.header {
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu a {
+  display: block;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  color: #000;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+}
+
+.menu a:hover {
+  border-color: #e21;
+}
+
+/* Main Content */
+
+.wrapper-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+/* Main Wrapper  */
+.introduction-wrapper {
+  display: grid;
+  align-content: center;
+  justify-items: end;
+  text-align: right;
+  background-color: white;
+  position: relative;
+  padding: 2.5rem;
+  gap: 1.25rem;
+}
+
+.introduction-wrapper h1 {
+  font-size: 2rem;
+}
+
+.introduction-wrapper::before {
+  width: 3.75rem;
+  height: 4px;
+  content: '';
+  position: absolute;
+  background: #ee2211;
+  top: 2rem;
+  right: -2rem;
+}
+
+.introduction-header {
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.introduction-description {
+  /* font-weight: bold; */
+  color: #000;
+}
+
+.introduction-view {
+  background-color: #e21;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.main-view:hover {
+  background: #900;
+}
+
+/* Photo */
+.photo {
+  display: block;
+  max-width: 100%;
+}
+
+/* benifits-wrapper */
+.benifits-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.benifits-title {
+  text-align: right;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  font-size: 64px;
+  background-image: url('../imgs/wave.svg');
+}
+
+/* info-wrapper  */
+.info-wrapper {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1.25rem;
+  gap: 0.625rem 1.25rem;
+}
+
+.info-item:hover {
+  border-left: 3px solid red;
+}
+
+.info-item:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.info-item p {
+  grid-column: 2;
+}
+/* footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
